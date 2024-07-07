@@ -1,8 +1,8 @@
 .header {
     top: 0;
     width: 100%;
-    text-align: center; /* Выравниваем текст по центру */
-    padding-top: 25px;/* Добавляем отступы сверху и снизу */
+    text-align: center;
+    padding-top: 25px;
   }
 
 .heading {

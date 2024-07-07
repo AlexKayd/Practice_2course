@@ -4,7 +4,7 @@ import myImage from './images/logo.png';
 const Logo = () => {
   return (
     <div className="logo-container">
-        <Image src={myImage} width={120} height={50}/>
+        <Image src={myImage} width={90} height={55}/>
     </div>
   );
 };

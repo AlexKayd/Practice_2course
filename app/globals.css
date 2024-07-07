@@ -15,6 +15,18 @@ body {
   left: 1%; 
 }
 
+@media (max-width: 580px) {
+  .logo-container {
+    position: fixed;
+    top: 0%; 
+    left: 0%; 
+    right: 0%; 
+  }
+  .logo-container img {
+    transform: scale(0.4);
+  }
+}
+
 /* SELECTIONS */
 .selection-container {
   position: fixed;
