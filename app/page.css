@@ -36,7 +36,7 @@
   }
   
   .registration-form label {
-    margin-right: 10px;
+    margin-right: 10px; 
   }
   
   .registration-form input {
@@ -74,101 +74,25 @@
   }
   
 
-/* Общие стили для всех устройств */
-/* .container {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.rectangle {
-  width: 60%;
-  max-width: 600px;
-  background-color: #7B25D0;
-  border-radius: 10px;
-  padding: 40px;
-  color: white;
-  text-align: center;
-}
-
-.registration-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 0px;
-  background-color: #d02525;
-}
-
-.registration-form h2 {
-  margin-bottom: 25px;
-}
-
-.registration-form .input-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 18px;
-  width: 38%;
-  padding-right: 8%;
-}
-
-.registration-form label {
-  margin-right: 10px;
-}
-
-.registration-form input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.registration-form .enter-button {
-  background-color: #b0f000;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 1px;
-  cursor: pointer;
-  white-space: pre-wrap;
-}
-
-.registration-form .success-message {
-  color: rgb(255, 255, 255);
-  margin-top: 15px;
-  text-align: left;
-  white-space: pre-wrap;
-}
-
-.registration-form .password-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.registration-form .password-container .enter-button {
-  margin-left: 20px;
-} */
-
-/* Медиа-запросы для адаптации на мобильных устройствах */
-@media (max-width: 600px) {
-  .rectangle {
-    width: 95%; /* Ширина в процентах для мобильных устройств */
-  }
-
-  .registration-form input {
-    width: calc(100% - 70px); /* Динамическая ширина для полей ввода */
-    box-sizing: border-box;
-  }
-
-  .registration-form .password-container .enter-button {
-    margin-left: 10px; /* Отступ слева для кнопки */
-  }
-
-  .registration-form .success-message {
-    margin-left: 0; /* Отступ слева для сообщения */
-  }
-}
+   @media (max-width: 600px) {
+     .registration-form {
+       width: 100%;
+     }
+     .rectangle {
+       padding-top: 15px;
+       padding-bottom: 15px;
+     }
+     .registration-form .input-container {
+       flex-direction: column;
+     }
+     .registration-form .password-container {
+       flex-direction: column;
+     }
+     .registration-form .enter-button {
+       margin-right: 10%;
+       margin-top: 10%;
+     }
+     .registration-form .success-message {
+       margin-left: 0%;
+     }
+   }
