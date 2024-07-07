@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="ru">
       <body className={jura.className}>
         <Logo/>
+        <Lk_selection/>
         {children}
       </body>
     </html>
