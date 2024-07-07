@@ -74,7 +74,7 @@
   }
   
 
-   @media (max-width: 600px) {
+   @media (max-width: 925px) {
      .registration-form {
        width: 100%;
      }
@@ -89,11 +89,11 @@
        flex-direction: column;
      }
      .registration-form .enter-button {
-       margin-right: 10%;
-       margin-top: 10%;
+       margin-right: 7%;
+       margin-top: 5%;
      }
      .registration-form .success-message {
-       margin-left: 4%;
+       margin-left: 2%;
        text-align: center;
      }
    }
