@@ -94,5 +94,6 @@
      }
      .registration-form .success-message {
        margin-left: 0%;
+       text-align: center;
      }
    }
