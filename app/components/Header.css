@@ -8,6 +8,16 @@
     padding-left: 1%;
   }
 
+  .main_header {
+    display: flex; 
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+    padding-left: 1%;
+  }
+
 .heading {
     font-size: 52px;
     text-align: center;
@@ -15,8 +25,6 @@
     text-shadow: 4px 4px 3px #BDFF00;
     font-weight: normal;
   }
-
-  
 
   @media (max-width: 580px) {
     .header {
