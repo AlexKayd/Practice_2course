@@ -9,27 +9,37 @@ const Enterance = () => {
   const [passwordError, setPasswordError] = useState(false);
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
   const router = useRouter(); 
+  const [errorMessage, setErrorMessage] = useState(null);
   
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Проверка заполненности полей
     if (login.trim() === '' || password.trim() === '') {
-      setLoginError(login.trim() === '');
-      setPasswordError(password.trim() === '');
-      setRegistrationSuccess(false);
-      return;
-    }
-
-    // Сохранение данных в переменные
-    // (Можно использовать localStorage, sessionStorage или другую логику)
-    localStorage.setItem('login', login);
-    localStorage.setItem('password', password);
-
-    setRegistrationSuccess(true);
-    setLoginError(false);
-    setPasswordError(false);
-  };
+        setLoginError(login.trim() === '');
+        setPasswordError(password.trim() === '');
+        setRegistrationSuccess(false);
+        return;
+      }
+      else{
+        setRegistrationSuccess(true);
+      }
+  
+      try {
+          const response = await fetch('http://localhost:3001/server/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ login, password })
+        });
+  
+        if (response.ok) {
+          setErrorMessage(true);
+        } else {
+          setErrorMessage(false);
+        }
+      } catch (error) {
+  
+      }
+    };
 
   return (
     <form onSubmit={handleSubmit} className="registration-form">
@@ -58,7 +68,8 @@ const Enterance = () => {
         <button type="submit" className="enter-button">Enter</button>
       </div>
 
-      {registrationSuccess && router.push('/lk')}
+      {registrationSuccess && errorMessage && router.push('/lk')}
+      {registrationSuccess && !errorMessage && <p className="bad-message">!! Ошибка авторизации !! Попробуйте изменить логин или пароль.</p>}
     </form>
   );
 };

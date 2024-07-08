@@ -7,26 +7,36 @@ const Registration_form = () => {
   const [loginError, setLoginError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(null);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Проверка заполненности полей
     if (login.trim() === '' || password.trim() === '') {
       setLoginError(login.trim() === '');
       setPasswordError(password.trim() === '');
       setRegistrationSuccess(false);
       return;
     }
+    else{
+      setRegistrationSuccess(true);
+    }
 
-    // Сохранение данных в переменные
-    // (Можно использовать localStorage, sessionStorage или другую логику)
-    localStorage.setItem('login', login);
-    localStorage.setItem('password', password);
+    try {
+        const response = await fetch('http://localhost:3001/server/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ login, password })
+      });
 
-    setRegistrationSuccess(true);
-    setLoginError(false);
-    setPasswordError(false);
+      if (response.ok) {
+        setErrorMessage(true);
+      } else {
+        setErrorMessage(false);
+      }
+    } catch (error) {
+
+    }
   };
 
   return (
@@ -56,9 +66,13 @@ const Registration_form = () => {
         <button type="submit" className="enter-button">Enter</button>
       </div>
 
-      {registrationSuccess && (
+      {registrationSuccess && errorMessage && (
         <p className="success-message">Вы успешно зарегистрировались!</p>
       )}
+       {registrationSuccess && !errorMessage && (
+         <p className="bad-message">!! Ошибка регистрации !! Попробуйте изменить логин.</p>
+      )} 
+
     </form>
   );
 };

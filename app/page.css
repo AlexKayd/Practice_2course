@@ -77,6 +77,16 @@
     white-space: pre-wrap; 
     text-align: left;
   }
+
+  .registration-form .bad-message{ 
+    color: rgb(255, 100, 100);
+    margin-left: 64px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+
   
   .registration-form .password-container {
     display: flex;
@@ -125,12 +135,13 @@
     flex-direction: column;
     padding-right: 0%;
  }
-  .registration-form .success-message {
+  .registration-form .success-message,  .registration-form .bad-message {
    margin-left: 2%;
    text-align: center;
  }
+
  .registration-form .password-container .enter-button {
   margin-top: 20px;
   margin-right: 20px;
-}
+ }
 }
