@@ -1,6 +1,7 @@
 import styles from "./page.css";
 import Header from './components/Header';
 import Registration_form from './components/Registration_form';
+import Enterance from "./components/Enterance";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <div className = "rectangle">
           <p>
             <Registration_form/>
+            <Enterance/>
           </p>
         </div>
       </div>

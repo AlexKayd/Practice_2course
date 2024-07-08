@@ -3,13 +3,24 @@
     width: 100%;
     text-align: center;
     padding-top: 25px;
+    padding-left: 1%;
   }
 
 .heading {
     font-size: 52px;
     text-align: center;
     color: white; 
-    text-shadow: 4px 5px 5px #BDFF00;
+    text-shadow: 4px 4px 3px #BDFF00;
+    font-weight: normal;
+  }
+
+  @media (max-width: 580px) {
+    .header {
+      width: 100%;
+      text-align: center;
+      padding-top: 80px;
+      padding-left: 1%;
+    }
   }
 
   

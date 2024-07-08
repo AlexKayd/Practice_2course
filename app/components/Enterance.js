@@ -1,13 +1,15 @@
 'use client'
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
-const Registration_form = () => {
+const Enterance = () => {
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
-
+  const router = useRouter(); 
+  
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -31,7 +33,7 @@ const Registration_form = () => {
 
   return (
     <form onSubmit={handleSubmit} className="registration-form">
-      <h2>Регистрация</h2>
+      <h3>Вход</h3>
 
       <div className="input-container">
         <label htmlFor="login">Login:</label>
@@ -56,11 +58,9 @@ const Registration_form = () => {
         <button type="submit" className="enter-button">Enter</button>
       </div>
 
-      {registrationSuccess && (
-        <p className="success-message">Вы успешно зарегистрировались!</p>
-      )}
+      {registrationSuccess && router.push('/lk')}
     </form>
   );
 };
 
-export default Registration_form;
+export default Enterance;
