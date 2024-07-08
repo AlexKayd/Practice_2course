@@ -58,7 +58,7 @@ body {
   .selection-container {
     position: fixed;
     top: 0%;
-    left: 4%;
+    left: 5%;
     display: flex;
     justify-content: center;
     transform: scale(0.6) translateY(-1930%);
