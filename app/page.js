@@ -1,5 +1,5 @@
 import styles from "./page.css";
-import Header from './components/Header';
+import Header_main from './components/Header_main';
 import Registration_form from './components/Registration_form';
 import Enterance from "./components/Enterance";
 
@@ -7,8 +7,7 @@ import Enterance from "./components/Enterance";
 export default function Home() {
   return (
     <main>
-      <Header text ="Social platform "/>
-      <Header text ="for 8 Institute"/>
+      <Header_main text ="Social platform for 8 Institute "/>
 
       <div className = "container">
         <div className = "rectangle">

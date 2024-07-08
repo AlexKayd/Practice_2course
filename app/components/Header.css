@@ -1,4 +1,6 @@
 .header {
+    display: flex; 
+    justify-content: center;
     top: 0;
     width: 100%;
     text-align: center;
@@ -14,12 +16,15 @@
     font-weight: normal;
   }
 
+  
+
   @media (max-width: 580px) {
     .header {
       width: 100%;
       text-align: center;
       padding-top: 80px;
       padding-left: 1%;
+      padding-bottom: 0%;
     }
   }
 
