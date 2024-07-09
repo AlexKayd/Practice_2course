@@ -22,21 +22,21 @@ const Registration_form = () => {
       setRegistrationSuccess(true);
     }
 
-    try {
-        const response = await fetch('http://localhost:3001/server/register', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ login, password })
-      });
+    // try {
+    //     const response = await fetch('http://localhost:3001/server/register', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({ login, password })
+    //   });
 
-      if (response.ok) {
-        setErrorMessage(true);
-      } else {
-        setErrorMessage(false);
-      }
-    } catch (error) {
+    //   if (response.ok) {
+    //     setErrorMessage(true);
+    //   } else {
+    //     setErrorMessage(false);
+    //   }
+    // } catch (error) {
 
-    }
+    // }
   };
 
   return (
