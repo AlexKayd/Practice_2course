@@ -1,0 +1,17 @@
+.container {
+    justify-content: center;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    padding-top: 210px;
+    padding-left: 1%;
+  }
+  
+  .loading-message {
+    font-size: 24px;
+    text-align: center;
+    color: white; 
+    text-shadow: 4px 4px 3px #9900ff;
+    font-weight: normal;
+  }
+  

@@ -1,5 +1,6 @@
 import Messenger_selection from '@/app/components/Messenger_selection';
 import Header from '@/app/components/Header';
+import './messenger.css';
 
 export const metadata = {
     title: "Messenger",
@@ -11,7 +12,11 @@ export default function Messenger() {
     <main>
         <Messenger_selection/>
         <Header text ="Мессенджер"/>
-        
+          <div className="container">
+            <div className="loading-message">
+              <h1>В разработке...</h1>
+          </div>
+      </div>
     </main>
   );
 }
