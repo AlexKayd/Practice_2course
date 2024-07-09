@@ -1,5 +1,3 @@
-import './Header.css';
-
 const Header = ({text}) => {
     return (
         <div className="main_header">

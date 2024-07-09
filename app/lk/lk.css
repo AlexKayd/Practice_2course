@@ -1,0 +1,30 @@
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rectangle {
+    width: 65%;
+    background-color: #827291;
+    border-radius: 10px;
+    padding-bottom: 145px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+  }
+
+  @media (max-width: 700px) {
+
+    .rectangle {
+      width: 75%;
+      background-color: #827291;
+      border-radius: 10px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      color: white;
+      text-align: center;
+    }
+  }

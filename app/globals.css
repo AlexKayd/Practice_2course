@@ -19,7 +19,7 @@ body {
   z-index: -1; 
 }
 
-@media (max-width: 580px) {
+@media (max-width: 700px) {
   .logo-container {
     top: 1%; 
     left: 0%; 
@@ -33,7 +33,7 @@ body {
 /* SELECTIONS */
 .selection-container {
   position: fixed;
-  margin-top: 240px;
+  margin-top: 300px;
   height: 20px;
 }
 
@@ -57,14 +57,14 @@ body {
 }
 
 
-@media (max-width: 580px) {
+@media (max-width: 700px) {
   .selection-container {
     position: fixed;
     top: 0%;
     left: 5%;
     display: flex;
     justify-content: center;
-    transform: scale(0.6) translateY(-1930%);
+    transform: scale(0.6) translateY(-2400%);
     
   }
   
@@ -82,3 +82,43 @@ body {
     font-size: 15px;
   }
 }
+
+/* HEADER */
+.header {
+  display: flex; 
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  padding-left: 0%;
+}
+
+.main_header {
+  display: flex; 
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+  padding-left: 1%;
+}
+
+.heading {
+  font-size: 52px;
+  text-align: center;
+  color: white; 
+  text-shadow: 4px 4px 3px #BDFF00;
+  font-weight: normal;
+}
+
+@media (max-width: 700px) {
+  .header {
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 1%;
+    padding-bottom: 0%;
+  }
+}
+
