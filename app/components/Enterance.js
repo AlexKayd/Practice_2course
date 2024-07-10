@@ -25,7 +25,7 @@ const Enterance = () => {
       }
   
       try {
-          const response = await fetch('http://localhost:3001/server/register', {
+          const response = await fetch('http://localhost:3003/server/register', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ login, password })

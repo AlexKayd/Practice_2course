@@ -1,0 +1,87 @@
+.event-details-container {
+    position: relative;
+    background-color: #f5f5dc;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 30px auto 0 auto; 
+    color: #6d28d9 !important;
+    border-color: #6d28d9 !important;
+    font-family: 'Georgia', serif; 
+    font-size: 18px;
+}
+
+.event-details-date {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    text-align: center;
+    color: #6d28d9 !important;
+    border: 2px solid #6d28d9 !important; 
+}
+
+.events-list {
+    margin-top: 20px; 
+}
+
+.event-card {
+    margin-bottom: 20px;
+    border: 2px solid #6d28d9 !important; 
+    position: relative; 
+}
+
+
+.event-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.event-card p {
+    font-size: 14px;
+    margin-bottom: 4px;
+    margin: 10px auto 0 auto;
+}
+
+.event-field span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.no-events {
+    font-style: italic; 
+    color: #7c3aed; 
+    margin-top: 10px; 
+}
+
+.button-group {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-button,
+.back-button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+.create-button:hover,
+.back-button:hover {
+    background-color: #45a049;
+}
+
+.create-button:active,
+.back-button:active {
+    background-color: #3e8e41;
+}
